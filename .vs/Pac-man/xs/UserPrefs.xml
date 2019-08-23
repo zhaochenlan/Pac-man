@@ -1,0 +1,15 @@
+﻿<Properties StartupConfiguration="{16E7E552-D08B-9AFB-7A07-82F62E8D17B5}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scrept/Pacmen_movement.cs">
+    <Files>
+      <File FileName="Assets/Scrept/Pacmen_movement.cs" Line="10" Column="26" />
+      <File FileName="Assets/Scrept/Pacman_move_animation.cs" Line="7" Column="40" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="2475fafa-509c-4fde-ab55-4d1d41f9541f" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
