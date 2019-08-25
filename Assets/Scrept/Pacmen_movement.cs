@@ -9,63 +9,100 @@ public class Pacmen_movement : MonoBehaviour
     private int move = 1;
     private int timer = 30;
     public Animator animatorController;
+    enum direction {
+        right,
+        left,
+        up,
+        down
+    }
+
+    direction myDirection = direction.right;
+    bool onPress = false;
 
     private void Start()
     {
         dest = transform.position;
-        animatorController.SetTrigger("left_enter");
+        animatorController.SetTrigger("right_enter");
     }
 
     private void FixedUpdate()
     {
+        AutoMove();
+        CheckButtonState();
+        if (onPress == false)
+        {
+            changeDirection();
+        }
+    }
+
+    private void CheckButtonState() {
+        if(!Input.GetKey(KeyCode.UpArrow)&&this.myDirection == direction.up) {
+            onPress = false;
+        }
+        if (!Input.GetKey(KeyCode.DownArrow) && this.myDirection == direction.down)
+        {
+            onPress = false;
+        }
+        if (!Input.GetKey(KeyCode.LeftArrow) && this.myDirection == direction.left)
+        {
+            onPress = false;
+        }
+        if (!Input.GetKey(KeyCode.RightArrow) && this.myDirection == direction.right)
+        {
+            onPress = false;
+        }
+    }
+
+    private void changeDirection() {
+        if (Input.GetKey(KeyCode.UpArrow) && this.myDirection != direction.up)
+        {
+            animatorController.SetTrigger("up_enter");
+            this.myDirection = direction.up;
+            onPress = true;
+        }
+        if (Input.GetKey(KeyCode.DownArrow) && this.myDirection != direction.down)
+        {
+            animatorController.SetTrigger("down_enter");
+            this.myDirection = direction.down;
+            onPress = true;
+        }
+        if (Input.GetKey(KeyCode.LeftArrow) && this.myDirection != direction.left)
+        {
+            animatorController.SetTrigger("left_enter");
+            this.myDirection = direction.left;
+            onPress = true;
+        }
+        if (Input.GetKey(KeyCode.RightArrow) && this.myDirection != direction.right)
+        {
+            animatorController.SetTrigger("right_enter");
+            this.myDirection = direction.right;
+            onPress = true;
+        }
+    }
+
+    private void AutoMove() {
+
         Vector2 temp = Vector2.MoveTowards(transform.position, dest, speed);
         GetComponent<Rigidbody2D>().MovePosition(temp);
 
-        demoMove();
-
-        /*if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
-        {
+        if (myDirection == direction.up) {
             dest = (Vector2)transform.position + Vector2.up;
         }
-        if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
-        {
+        if (myDirection == direction.down) {
             dest = (Vector2)transform.position + Vector2.down;
         }
-        if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
-        {
+        if (myDirection == direction.left) {
             dest = (Vector2)transform.position + Vector2.left;
         }
-        if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
-        {
+        if (myDirection == direction.right) {
             dest = (Vector2)transform.position + Vector2.right;
-        }*/
+        }
+
     }
+
 
     private void demoMove() {
 
-        timer--;
-        if (timer == 0)
-        {
-            timer = 30;
-            move = -move;
-            if (move == 1)
-            {
-                animatorController.SetTrigger("left_enter");
-            }
-            else
-            {
-                animatorController.SetTrigger("right_enter");
-            }
-        }
-
-        if (move == 1)
-        {
-            dest = (Vector2)transform.position + Vector2.left;
-        }
-        else
-        {
-            dest = (Vector2)transform.position + Vector2.right;
-        }
     }
 
 
