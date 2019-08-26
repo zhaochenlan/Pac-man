@@ -14,9 +14,8 @@ GameObject:
   - component: {fileID: 3337311387565196315}
   - component: {fileID: 3337311387565196390}
   - component: {fileID: 3337311387565196313}
-  - component: {fileID: 3337311387565196312}
   m_Layer: 0
-  m_Name: pecman
+  m_Name: pacman
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -163,17 +162,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.2
-  animatorController: {fileID: 3337311387565196315}
---- !u!114 &3337311387565196312
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3337311387565196319}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1faf88692cf7a4f528166398a7535472, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
   animatorController: {fileID: 3337311387565196315}

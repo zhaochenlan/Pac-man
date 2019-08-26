@@ -1,15 +1,15 @@
 ﻿<Properties StartupConfiguration="{16E7E552-D08B-9AFB-7A07-82F62E8D17B5}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scrept/GameManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scrept/monster_movement.cs">
     <Files>
       <File FileName="Assets/Scrept/Pacmen_movement.cs" Line="25" Column="54" />
-      <File FileName="Assets/Scrept/Dot.cs" Line="19" Column="5" />
-      <File FileName="Assets/Scrept/PowerUp.cs" Line="25" Column="6" />
-      <File FileName="Assets/Scrept/GameManager.cs" Line="7" Column="12" />
+      <File FileName="Assets/Scrept/Dot.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scrept/GameManager.cs" />
+      <File FileName="Assets/Scrept/monster_movement.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="167fb5c3-255c-4652-9eba-81b8c09511c7" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="f969a786-2786-4e93-b9c1-48be541009a2" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

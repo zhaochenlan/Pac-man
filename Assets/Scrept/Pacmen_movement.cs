@@ -6,8 +6,6 @@ public class Pacmen_movement : MonoBehaviour
 {
     public float speed = 0.2f;
     private Vector2 dest = Vector2.zero;
-    private int move = 1;
-    private int timer = 30;
     public Animator animatorController;
     enum direction {
         right,
