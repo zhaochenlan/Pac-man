@@ -8,153 +8,72 @@ public class monster_movement : MonoBehaviour
     protected Vector2 dest = Vector2.zero;
     public Animator animatorController;
     Collider2D cor2D;
-    enum direction
-    {
-        right,
-        left,
-        up,
-        down,
-        stop,
-        no
-    }
-    direction myDirection = direction.stop;
-    int timer = 30;
+
+    public wayPoint lastWp;
+    public wayPoint curWp;
+    public wayPoint nextWp;
 
     // Start is called before the first frame update
     void Start()
     {
-        myDirection = direction.right;
-        animatorController.SetTrigger("right");
+        animatorController.SetTrigger("left");
         dest = transform.position;
     }
 
-    // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        AI();
-        AutoMove();
-        timer--;
-    }
-
-    protected void AutoMove()
-    {
-        Vector2 temp = Vector2.MoveTowards(transform.position, dest, speed);
-        GetComponent<Rigidbody2D>().MovePosition(temp);
-
-        if (myDirection == direction.up && validMove(Vector2.up))
-        {
-            dest = (Vector2)transform.position + Vector2.up;
-        }
-        if (myDirection == direction.down && validMove(Vector2.down))
-        {
-            dest = (Vector2)transform.position + Vector2.down;
-        }
-        if (myDirection == direction.left && validMove(Vector2.left))
-        {
-            dest = (Vector2)transform.position + Vector2.left;
-        }
-        if (myDirection == direction.right && validMove(Vector2.right))
-        {
-            dest = (Vector2)transform.position + Vector2.right;
-        }
-
-    }
-
-    protected void AI() {
-        
-        if(myDirection == direction.up && !validMove(Vector2.up))
-        {
-            changeDirection(Random.Range(0, 4));
-        }
-        if (myDirection == direction.down && !validMove(Vector2.down))
-        {
-            changeDirection(Random.Range(0, 4));
-        }
-        if (myDirection == direction.left && !validMove(Vector2.left))
-        {
-            changeDirection(Random.Range(0, 4));
-        }
-        if (myDirection == direction.right && !validMove(Vector2.right))
-        {
-            changeDirection(Random.Range(0, 4));
-        }
-
-        if (directionCheck() != 0) {        
-            if (timer <= 0) {
-                timer = 30;
-                print(directionCheck());
-                // if (Random.Range(0, 2) == 1)
-                    AutoMove();
-                    changeDirection(directionCheck());
-                
-            }
-            
+        if (nextWp != null) {
+            moveToNext();
         }
     }
 
-    protected int directionCheck() {
-        if ((myDirection != direction.up && myDirection != direction.down) && validMove(Vector2.up * 10))
+    void moveToNext() {
+        //判断当前位置是否不等于路经点，不等于就继续移动等于就转向下一个路径点
+        float distance = Vector3.Distance(transform.position, nextWp.transform.position);
+
+        if (distance > 0.1f)
         {
-            return 1;
+            Vector2 p = Vector2.MoveTowards(transform.position, nextWp.transform.position, speed);
+            GetComponent<Rigidbody2D>().MovePosition(p);
         }
-        if ((myDirection != direction.up && myDirection != direction.down) && validMove(Vector2.down * 10))
+        else
         {
-            return 2;
+            lastWp = curWp;
+            curWp = nextWp;
+            nextWp = findNextWp();
+            changeDirection();
         }
-        if ((myDirection != direction.left && myDirection != direction.right) && validMove(Vector2.left * 10))
-        {
-            return 3;
-        }
-        if ((myDirection != direction.left && myDirection != direction.right) && validMove(Vector2.right * 10))
-        {
-            return 4;
-        }
-        return 0;
     }
 
-    protected void changeDirection(int d)
-    {
-        if (d==1)
+    protected wayPoint findNextWp() {
+        int r;
+        do
         {
-            animatorController.SetTrigger("up");
-            this.myDirection = direction.up;
+            r = Random.Range(0, nextWp.neighborWps.Length);
+
+        } while (nextWp.neighborWps[r] == lastWp);
+
+        return nextWp.neighborWps[r];
+    }
+
+    protected void changeDirection() {
+        Vector2 dir = (Vector2)nextWp.transform.position - (Vector2)transform.position;
+        //Debug.Log(dir.x+" "+ dir.y);
+        if (dir.x > 0.5) {
+            animatorController.SetTrigger("right");
         }
-        if (d == 2)
-        {
-            animatorController.SetTrigger("down");
-            this.myDirection = direction.down;
-        }
-        if (d == 3)
+        if (dir.x < -0.5)
         {
             animatorController.SetTrigger("left");
-            this.myDirection = direction.left;
         }
-        if (d == 4)
+        if (dir.y > 0.5)
         {
-            animatorController.SetTrigger("right");
-            this.myDirection = direction.right;
+            animatorController.SetTrigger("up");
         }
-    }
-
-
-
-    protected bool validMove(Vector2 dir)
-    {
-        //获得自身位置
-        Vector2 pos = transform.position;
-        //发射射线从pos+dir到pos    
-        RaycastHit2D hit = Physics2D.Linecast(pos + dir, pos);
-        if (hit.collider != null)
-        {         
-            if (hit.collider.tag != "wall") {
-                return true;
-            }
-            return false;
+        if (dir.y < -0.5)
+        {
+            animatorController.SetTrigger("down");
         }
-        else {
-            return true;
-        }
-        
     }
 
     protected void OnTriggerEnter2D(Collider2D co2)
