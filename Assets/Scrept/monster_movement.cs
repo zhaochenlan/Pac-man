@@ -13,16 +13,25 @@ public class monster_movement : MonoBehaviour
     public wayPoint curWp;
     public wayPoint nextWp;
 
+    public wayPoint naviWp;
+
+    protected int weekUpTime = 0;
+
     // Start is called before the first frame update
-    void Start()
+    protected void Start()
     {
-        animatorController.SetTrigger("left");
+        setUp();
+    }
+
+    virtual protected void setUp()
+    {
+        animatorController.SetTrigger("down");
         dest = transform.position;
     }
 
-    void FixedUpdate()
+    protected void FixedUpdate()
     {
-        if (nextWp != null) {
+        if (nextWp != null && Time.time > weekUpTime) {
             moveToNext();
         }
     }
@@ -38,22 +47,84 @@ public class monster_movement : MonoBehaviour
         }
         else
         {
+
             lastWp = curWp;
             curWp = nextWp;
             nextWp = findNextWp();
             changeDirection();
+            
         }
     }
 
-    protected wayPoint findNextWp() {
+   virtual protected wayPoint findNextWp() {
+        //随机在当前路径点相邻点选择一个前进
         int r;
         do
         {
             r = Random.Range(0, nextWp.neighborWps.Length);
-
-        } while (nextWp.neighborWps[r] == lastWp);
+        } while (nextWp.neighborWps[r] == lastWp);//防止返回上一个路径点
 
         return nextWp.neighborWps[r];
+    }
+
+    protected wayPoint naviTo(wayPoint aimWp) {
+        if(curWp != aimWp)
+        {
+            return getNavi(this.curWp, aimWp)[1];
+        }
+        return aimWp;
+    }
+
+    protected List<wayPoint> getNavi(wayPoint curWp, wayPoint aimWp) { //寻找前往目标路径点点最短路径
+        List<wayPoint> markedWp = new List<wayPoint>();
+        List<wayPoint> ShortestPath = new List<wayPoint>();
+        List<wayPoint> WaitList = new List<wayPoint>();
+        List<int> fatherPoints = new List<int>();
+        wayPoint fp = null;
+        int a = 0;
+
+        WaitList.Add(curWp);
+        markedWp.Add(curWp);
+
+       fatherPoints.Add(-1);//当前路径点的父节点不存在，标记为-1
+       // Debug.Log(curWp.no + " to "+ aimWp);
+
+        for (int i=0; i< WaitList.Count; i++)
+        {
+            
+            for (int j = 0; j < WaitList[i].neighborWps.Length; j++) {
+
+                if (!markedWp.Contains(WaitList[i].neighborWps[j]))
+                {
+                    markedWp.Add(WaitList[i].neighborWps[j]);
+                    if (WaitList[i].neighborWps[j] == aimWp)
+                    {
+                        fatherPoints.Add(i);
+                        WaitList.Add(WaitList[i].neighborWps[j]);
+                        //找到目标点
+                        ShortestPath.Add(aimWp);
+                        a = fatherPoints[fatherPoints.Count-1];
+                        //通过父节点追溯获取最短路径
+                        while (ShortestPath[0]!=curWp)
+                        {
+                            fp = WaitList[a];
+                            ShortestPath.Insert(0,fp);
+                            a = fatherPoints[a];
+                        }
+
+                        return ShortestPath;
+                    }
+                    else
+                    {
+                        fatherPoints.Add(i);//记录Wait List中每一个元素的父节点
+                        WaitList.Add(WaitList[i].neighborWps[j]);//在等待表之后加上当前路径点的所有相邻点
+                    }
+                }
+            }
+                
+        }
+            return ShortestPath;
+
     }
 
     protected void changeDirection() {
