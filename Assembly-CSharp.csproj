@@ -60,10 +60,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scrept\Dot.cs" />
     <Compile Include="Assets\Scrept\GameManager.cs" />
-    <Compile Include="Assets\Scrept\Pacmen_movement.cs" />
-    <Compile Include="Assets\Scrept\PowerUp.cs" />
+    <Compile Include="Assets\Scrept\map items\Dot.cs" />
+    <Compile Include="Assets\Scrept\map items\PowerUp.cs" />
+    <Compile Include="Assets\Scrept\pacman scrept\Pacmen_movement.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>/Users/lanzhaochen/Documents/GitHub/Pac-man/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
