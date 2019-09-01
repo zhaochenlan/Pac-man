@@ -1,14 +1,16 @@
 ﻿<Properties StartupConfiguration="{16E7E552-D08B-9AFB-7A07-82F62E8D17B5}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scrept/monster_movement_pink.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scrept/Pacmen scrept/Pacmen_movement.cs">
     <Files>
-      <File FileName="Assets/Scrept/monster_movement_pink.cs" Line="13" Column="28" />
-      <File FileName="Assets/Scrept/wayPoint.cs" Line="8" Column="35" />
-      <File FileName="Assets/Scrept/monster_movement.cs" Line="19" Column="1" />
+      <File FileName="Assets/Scrept/wayPoint.cs" Line="10" Column="1" />
+      <File FileName="Assets/Scrept/monster_movement.cs" />
+      <File FileName="Assets/Scrept/monster_movement_pink.cs" />
+      <File FileName="Assets/Scrept/monster_movement_red.cs" Line="62" Column="1" />
+      <File FileName="Assets/Scrept/Pacmen_movement.cs" Line="108" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="5d1a767d-f322-4761-8963-df2d7977d867" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="64e2172c-4cd7-4354-b4ed-906eeb73bff4" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
