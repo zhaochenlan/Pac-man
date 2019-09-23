@@ -191,8 +191,10 @@ public class monster_movement : MonoBehaviour
 		if (gameObject.GetComponent<monster_movement_green>())
 			monster_purple.GetComponent<monster_movement_purple>().PatrolPath = gameObject.GetComponent<monster_movement_green>().PatrolPath;
 
+        if (gameObject.GetComponent<monster_movement_purple>())
+            monster_purple.GetComponent<monster_movement_purple>().PatrolPath = gameObject.GetComponent<monster_movement_purple>().PatrolPath;
 
-		Instantiate(monster_purple, gameObject.transform.position, Quaternion.identity);
+        Instantiate(monster_purple, gameObject.transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
 
