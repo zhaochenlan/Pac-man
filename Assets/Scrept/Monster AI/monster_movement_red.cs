@@ -6,9 +6,9 @@ public class monster_movement_red : monster_movement
 {
     bool naviOn = false;
 
-    void Update()
+    void FixedUpdate()
     {
-        attack();
+        destroyNearPacman();
     }
 
     override protected void setUp()
@@ -22,9 +22,9 @@ public class monster_movement_red : monster_movement
     {
         if (naviOn == false)
         {
-            if(GameObject.FindWithTag("pacman"))//If find Pac-Man, then chase
+            if(GameManager.pacman)//If find Pac-Man, then chase
             {
-                return naviTo(chase(GameObject.FindWithTag("pacman")));
+                return naviTo(chase(GameManager.pacman));
             }
             //Otherwise, randomly select a forward at the adjacent point of the current way point.
             return redomToNext();
@@ -38,7 +38,6 @@ public class monster_movement_red : monster_movement
 
     private wayPoint chase(GameObject aimObj) {
         wayPoint aimWp = null;
-        List<wayPoint> Wps = getWayPoints();
         float minDistance = 999;
         //Choose a way point that is the shortest distance from Pac-Man and navigate
         for (int i = 0; i < Wps.Count; i++)
@@ -52,14 +51,14 @@ public class monster_movement_red : monster_movement
         return aimWp;
     }
 
-    void attack()
+    void destroyNearPacman()//When pacman is too close to the monster, destroy it
     {
-        if (GameObject.FindWithTag("pacman")) {
-            if (Vector3.Distance(transform.position, GameObject.FindWithTag("pacman").transform.position) < 0.1f)
+        if (GameManager.pacman) {
+            if (Vector3.Distance(transform.position, GameManager.pacman.transform.position) < 0.2f)
             {
-                if (!GameObject.FindWithTag("pacman").GetComponent<Pacmen_proction>())
+                if (!GameManager.pacman.GetComponent<Pacmen_proction>())
                 {
-                    Destroy(GameObject.FindWithTag("pacman").gameObject);
+                    Destroy(GameManager.pacman);
                     GameObject.Find("GameManager").GetComponent<GameManager>().pacmanDeth();
                 }
             }

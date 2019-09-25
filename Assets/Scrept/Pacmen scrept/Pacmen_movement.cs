@@ -7,7 +7,7 @@ public class Pacmen_movement : MonoBehaviour
     public float speed = 0.1f;
     private Vector2 dest = Vector2.zero;
     public Animator animatorController;
-    enum direction {
+    enum Direction {
         stop,
         right,
         left,
@@ -15,7 +15,7 @@ public class Pacmen_movement : MonoBehaviour
         down
     }
 
-    direction myDirection = direction.stop;
+    Direction myDirection = Direction.stop;
     bool onPress = false;
 
     private void Start()
@@ -34,46 +34,46 @@ public class Pacmen_movement : MonoBehaviour
     }
 
     private void CheckButtonState() {
-        if(!Input.GetKey(KeyCode.UpArrow)&&this.myDirection == direction.up) {
+        if(!Input.GetKey(KeyCode.UpArrow)&&this.myDirection == Direction.up) {
             onPress = false;
         }
-        if (!Input.GetKey(KeyCode.DownArrow) && this.myDirection == direction.down)
+        if (!Input.GetKey(KeyCode.DownArrow) && this.myDirection == Direction.down)
         {
             onPress = false;
         }
-        if (!Input.GetKey(KeyCode.LeftArrow) && this.myDirection == direction.left)
+        if (!Input.GetKey(KeyCode.LeftArrow) && this.myDirection == Direction.left)
         {
             onPress = false;
         }
-        if (!Input.GetKey(KeyCode.RightArrow) && this.myDirection == direction.right)
+        if (!Input.GetKey(KeyCode.RightArrow) && this.myDirection == Direction.right)
         {
             onPress = false;
         }
     }
 
     private void changeDirection() {
-        if (Input.GetKey(KeyCode.UpArrow) && this.myDirection != direction.up)
+        if (Input.GetKey(KeyCode.UpArrow) && this.myDirection != Direction.up)
         {
             animatorController.SetTrigger("up_enter");
-            this.myDirection = direction.up;
+            this.myDirection = Direction.up;
             onPress = true;
         }
-        if (Input.GetKey(KeyCode.DownArrow) && this.myDirection != direction.down)
+        if (Input.GetKey(KeyCode.DownArrow) && this.myDirection != Direction.down)
         {
             animatorController.SetTrigger("down_enter");
-            this.myDirection = direction.down;
+            this.myDirection = Direction.down;
             onPress = true;
         }
-        if (Input.GetKey(KeyCode.LeftArrow) && this.myDirection != direction.left)
+        if (Input.GetKey(KeyCode.LeftArrow) && this.myDirection != Direction.left)
         {
             animatorController.SetTrigger("left_enter");
-            this.myDirection = direction.left;
+            this.myDirection = Direction.left;
             onPress = true;
         }
-        if (Input.GetKey(KeyCode.RightArrow) && this.myDirection != direction.right)
+        if (Input.GetKey(KeyCode.RightArrow) && this.myDirection != Direction.right)
         {
             animatorController.SetTrigger("right_enter");
-            this.myDirection = direction.right;
+            this.myDirection = Direction.right;
             onPress = true;
         }
     }
@@ -83,16 +83,16 @@ public class Pacmen_movement : MonoBehaviour
         Vector2 temp = Vector2.MoveTowards(transform.position, dest, speed);
         GetComponent<Rigidbody2D>().MovePosition(temp);
 
-        if (myDirection == direction.up && validMove(Vector2.up)) {
+        if (myDirection == Direction.up && validMove(Vector2.up)) {
             dest = (Vector2)transform.position + Vector2.up;
         }
-        if (myDirection == direction.down && validMove(Vector2.down)) {
+        if (myDirection == Direction.down && validMove(Vector2.down)) {
             dest = (Vector2)transform.position + Vector2.down;
         }
-        if (myDirection == direction.left && validMove(Vector2.left)) {
+        if (myDirection == Direction.left && validMove(Vector2.left)) {
             dest = (Vector2)transform.position + Vector2.left;
         }
-        if (myDirection == direction.right && validMove(Vector2.right)) {
+        if (myDirection == Direction.right && validMove(Vector2.right)) {
             dest = (Vector2)transform.position + Vector2.right;
         }
 

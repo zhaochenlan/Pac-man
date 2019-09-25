@@ -6,11 +6,6 @@ public class monster_movement_blue : monster_movement
 {
     bool naviOn = false;
 
-    void Update()
-    {
-
-    }
-
     override protected void setUp()
     {
         animatorController.SetTrigger("down");
@@ -22,13 +17,13 @@ public class monster_movement_blue : monster_movement
     {
         if (naviOn == false)
         {
-            if (GameObject.FindWithTag("pacman"))//If find Pac-Man, choose one from random moves or run away.
+            if (GameManager.pacman)//If find Pac-Man, choose one from random moves or run away.
             {
                 if (Random.Range(0, 2) == 0)
                 {
                     return redomToNext();
                 }
-                return naviTo(ranAway(GameObject.FindWithTag("pacman")));
+                return naviTo(ranAway(GameManager.pacman));
             }
             //Otherwise, randomly select a forward at the adjacent point of the current way point.
             return redomToNext();
@@ -43,7 +38,6 @@ public class monster_movement_blue : monster_movement
     private wayPoint ranAway(GameObject aimObj)
     {
         wayPoint aimWp = null;
-        List<wayPoint> Wps = getWayPoints();
         float maxDistance = 0;
         //Choose a way point furthest away from Pac-Man and navigate
         for (int i = 0; i < Wps.Count; i++)

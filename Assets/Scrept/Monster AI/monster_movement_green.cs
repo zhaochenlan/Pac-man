@@ -8,11 +8,6 @@ public class monster_movement_green : monster_movement
     public List<wayPoint> PatrolPath = new List<wayPoint>();
     private int wayMark = 0;
 
-    void Update()
-    {
-
-    }
-
     override protected void setUp()
     {
         animatorController.SetTrigger("down");

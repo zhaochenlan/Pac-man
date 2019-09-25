@@ -6,15 +6,6 @@ public class monster_movement_pink : monster_movement
 {
     bool naviOn = false;
 
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Space)) {
-            naviOn = !naviOn;
-            Debug.Log("!");
-            Debug.Log(getWayPoints().Count);
-        }
-    }
-
     override protected void setUp()
     {
         animatorController.SetTrigger("down");
@@ -25,8 +16,7 @@ public class monster_movement_pink : monster_movement
     override protected wayPoint findNextWp()
     {
         if (naviOn == false) {
-            //Randomly select a forward at the adjacent point of the current path point
-            return redomToNext();
+            return redomToNext();//Randomly select a forward at the adjacent point of the current path point
         } else
         {
             return naviTo(this.naviWp);

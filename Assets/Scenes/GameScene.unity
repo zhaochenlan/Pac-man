@@ -737,6 +737,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: wayPoint (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: no
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[1]
+      value: 
+      objectReference: {fileID: 1433556835}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[0]
+      value: 
+      objectReference: {fileID: 519149898}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[2]
+      value: 
+      objectReference: {fileID: 1577306913}
     - target: {fileID: 3312683996645707755, guid: 2ead028158ab54f4bace6c0c7b10825b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -792,31 +817,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: no
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[1]
-      value: 
-      objectReference: {fileID: 1433556835}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[0]
-      value: 
-      objectReference: {fileID: 519149898}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[2]
-      value: 
-      objectReference: {fileID: 1577306913}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ead028158ab54f4bace6c0c7b10825b, type: 3}
 --- !u!1001 &73231672
@@ -1231,6 +1231,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: wayPoint (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: no
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[1]
+      value: 
+      objectReference: {fileID: 1219811880}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[0]
+      value: 
+      objectReference: {fileID: 1491718809}
     - target: {fileID: 3312683996645707755, guid: 2ead028158ab54f4bace6c0c7b10825b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1286,26 +1306,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: no
-      value: 21
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[1]
-      value: 
-      objectReference: {fileID: 1219811880}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[0]
-      value: 
-      objectReference: {fileID: 1491718809}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ead028158ab54f4bace6c0c7b10825b, type: 3}
 --- !u!4 &106737307 stripped
@@ -1880,6 +1880,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: wayPoint (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: no
+      value: 33
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[1]
+      value: 
+      objectReference: {fileID: 601213922}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[0]
+      value: 
+      objectReference: {fileID: 1788050863}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[2]
+      value: 
+      objectReference: {fileID: 2102549375}
     - target: {fileID: 3312683996645707755, guid: 2ead028158ab54f4bace6c0c7b10825b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1935,31 +1960,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: no
-      value: 33
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[1]
-      value: 
-      objectReference: {fileID: 601213922}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[0]
-      value: 
-      objectReference: {fileID: 1788050863}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[2]
-      value: 
-      objectReference: {fileID: 2102549375}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ead028158ab54f4bace6c0c7b10825b, type: 3}
 --- !u!1 &149350791
@@ -2238,6 +2238,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: wayPoint
       objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[0]
+      value: 
+      objectReference: {fileID: 1936830954}
     - target: {fileID: 3312683996645707755, guid: 2ead028158ab54f4bace6c0c7b10825b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2293,16 +2303,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[0]
-      value: 
-      objectReference: {fileID: 1936830954}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ead028158ab54f4bace6c0c7b10825b, type: 3}
 --- !u!4 &168544628 stripped
@@ -3122,6 +3122,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: wayPoint (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: no
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[0]
+      value: 
+      objectReference: {fileID: 1936830954}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[1]
+      value: 
+      objectReference: {fileID: 1949168240}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[2]
+      value: 
+      objectReference: {fileID: 519149898}
     - target: {fileID: 3312683996645707755, guid: 2ead028158ab54f4bace6c0c7b10825b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3177,31 +3202,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: no
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[0]
-      value: 
-      objectReference: {fileID: 1936830954}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[1]
-      value: 
-      objectReference: {fileID: 1949168240}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[2]
-      value: 
-      objectReference: {fileID: 519149898}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ead028158ab54f4bace6c0c7b10825b, type: 3}
 --- !u!114 &266358299 stripped
@@ -3501,6 +3501,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: wayPoint (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: no
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[1]
+      value: 
+      objectReference: {fileID: 599484811}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[0]
+      value: 
+      objectReference: {fileID: 1848422930}
     - target: {fileID: 3312683996645707755, guid: 2ead028158ab54f4bace6c0c7b10825b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3556,26 +3576,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: no
-      value: 22
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[1]
-      value: 
-      objectReference: {fileID: 599484811}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[0]
-      value: 
-      objectReference: {fileID: 1848422930}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ead028158ab54f4bace6c0c7b10825b, type: 3}
 --- !u!4 &324036732 stripped
@@ -4002,6 +4002,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: wayPoint (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: no
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[1]
+      value: 
+      objectReference: {fileID: 462694308}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[0]
+      value: 
+      objectReference: {fileID: 599484811}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[2]
+      value: 
+      objectReference: {fileID: 196395892}
     - target: {fileID: 3312683996645707755, guid: 2ead028158ab54f4bace6c0c7b10825b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4057,31 +4082,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: no
-      value: 24
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[1]
-      value: 
-      objectReference: {fileID: 462694308}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[0]
-      value: 
-      objectReference: {fileID: 599484811}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[2]
-      value: 
-      objectReference: {fileID: 196395892}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ead028158ab54f4bace6c0c7b10825b, type: 3}
 --- !u!4 &406119522 stripped
@@ -4633,6 +4633,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: wayPoint (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: no
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[1]
+      value: 
+      objectReference: {fileID: 28030800}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[0]
+      value: 
+      objectReference: {fileID: 1104435496}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[2]
+      value: 
+      objectReference: {fileID: 1564259654}
     - target: {fileID: 3312683996645707755, guid: 2ead028158ab54f4bace6c0c7b10825b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4688,31 +4713,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: no
-      value: 18
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[1]
-      value: 
-      objectReference: {fileID: 28030800}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[0]
-      value: 
-      objectReference: {fileID: 1104435496}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[2]
-      value: 
-      objectReference: {fileID: 1564259654}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ead028158ab54f4bace6c0c7b10825b, type: 3}
 --- !u!4 &476275073 stripped
@@ -4851,6 +4851,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: wayPoint (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: no
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[1]
+      value: 
+      objectReference: {fileID: 1848422930}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[0]
+      value: 
+      objectReference: {fileID: 1577306913}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[2]
+      value: 
+      objectReference: {fileID: 20503515}
     - target: {fileID: 3312683996645707755, guid: 2ead028158ab54f4bace6c0c7b10825b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4906,31 +4931,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: no
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[1]
-      value: 
-      objectReference: {fileID: 1848422930}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[0]
-      value: 
-      objectReference: {fileID: 1577306913}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[2]
-      value: 
-      objectReference: {fileID: 20503515}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ead028158ab54f4bace6c0c7b10825b, type: 3}
 --- !u!1001 &491678633
@@ -4945,6 +4945,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: wayPoint (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: no
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[1]
+      value: 
+      objectReference: {fileID: 1217131115}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[0]
+      value: 
+      objectReference: {fileID: 1169034631}
     - target: {fileID: 3312683996645707755, guid: 2ead028158ab54f4bace6c0c7b10825b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5000,26 +5020,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: no
-      value: 32
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[1]
-      value: 
-      objectReference: {fileID: 1217131115}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[0]
-      value: 
-      objectReference: {fileID: 1169034631}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ead028158ab54f4bace6c0c7b10825b, type: 3}
 --- !u!4 &509928792 stripped
@@ -5040,6 +5040,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: wayPoint (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: no
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[1]
+      value: 
+      objectReference: {fileID: 1949168240}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[0]
+      value: 
+      objectReference: {fileID: 2070847210}
     - target: {fileID: 3312683996645707755, guid: 2ead028158ab54f4bace6c0c7b10825b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5095,26 +5115,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: no
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[1]
-      value: 
-      objectReference: {fileID: 1949168240}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[0]
-      value: 
-      objectReference: {fileID: 2070847210}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ead028158ab54f4bace6c0c7b10825b, type: 3}
 --- !u!114 &509932754 stripped
@@ -5332,13 +5332,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 0
-  gameTime: 0
   pacman_life: 3
   noOfDots: 120
-  pacman: {fileID: 3337311387565196319, guid: 9b4df149f35c24b0da3889cc445473ed, type: 3}
+  pacman_prototype: {fileID: 3337311387565196319, guid: 9b4df149f35c24b0da3889cc445473ed,
+    type: 3}
   pacmanLife: {fileID: 8180720107788558138, guid: ec2da59638d2749929333f57ae046071,
     type: 3}
-  StartWP: {fileID: 168544629}
   pacmanStartWP: {fileID: 1936830954}
   redMonster: {fileID: 3833803475259833604, guid: 95a1f6889253d46b784fa3c5ab42f166,
     type: 3}
@@ -5365,6 +5364,8 @@ MonoBehaviour:
   powerUp: {fileID: 1024103992}
   eatMonster: {fileID: 895812061}
   winMusic: {fileID: 1247863332}
+  ScoreLable: {fileID: 0}
+  TimeLable: {fileID: 0}
 --- !u!4 &519773879
 Transform:
   m_ObjectHideFlags: 0
@@ -5773,6 +5774,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: wayPoint (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: no
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[1]
+      value: 
+      objectReference: {fileID: 1104435496}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[0]
+      value: 
+      objectReference: {fileID: 2129317186}
     - target: {fileID: 3312683996645707755, guid: 2ead028158ab54f4bace6c0c7b10825b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5828,26 +5849,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: no
-      value: 14
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[1]
-      value: 
-      objectReference: {fileID: 1104435496}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[0]
-      value: 
-      objectReference: {fileID: 2129317186}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ead028158ab54f4bace6c0c7b10825b, type: 3}
 --- !u!4 &627483411 stripped
@@ -5971,6 +5972,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: wayPoint (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: no
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[1]
+      value: 
+      objectReference: {fileID: 2070847210}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[0]
+      value: 
+      objectReference: {fileID: 1433556835}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[2]
+      value: 
+      objectReference: {fileID: 1559371830}
     - target: {fileID: 3312683996645707755, guid: 2ead028158ab54f4bace6c0c7b10825b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6026,31 +6052,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: no
-      value: 13
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[1]
-      value: 
-      objectReference: {fileID: 2070847210}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[0]
-      value: 
-      objectReference: {fileID: 1433556835}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[2]
-      value: 
-      objectReference: {fileID: 1559371830}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ead028158ab54f4bace6c0c7b10825b, type: 3}
 --- !u!1001 &689716967
@@ -6338,6 +6339,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: wayPoint (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: no
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[1]
+      value: 
+      objectReference: {fileID: 1053021554}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[0]
+      value: 
+      objectReference: {fileID: 266358299}
     - target: {fileID: 3312683996645707755, guid: 2ead028158ab54f4bace6c0c7b10825b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6393,26 +6414,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: no
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[1]
-      value: 
-      objectReference: {fileID: 1053021554}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[0]
-      value: 
-      objectReference: {fileID: 266358299}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ead028158ab54f4bace6c0c7b10825b, type: 3}
 --- !u!1001 &737413159
@@ -6931,6 +6932,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: wayPoint (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: no
+      value: 28
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[1]
+      value: 
+      objectReference: {fileID: 675344227}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[0]
+      value: 
+      objectReference: {fileID: 1226246096}
     - target: {fileID: 3312683996645707755, guid: 2ead028158ab54f4bace6c0c7b10825b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6986,26 +7007,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: no
-      value: 28
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[1]
-      value: 
-      objectReference: {fileID: 675344227}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[0]
-      value: 
-      objectReference: {fileID: 1226246096}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ead028158ab54f4bace6c0c7b10825b, type: 3}
 --- !u!4 &800088882 stripped
@@ -7129,6 +7130,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: wayPoint (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: no
+      value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[1]
+      value: 
+      objectReference: {fileID: 694192080}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[0]
+      value: 
+      objectReference: {fileID: 1219811880}
     - target: {fileID: 3312683996645707755, guid: 2ead028158ab54f4bace6c0c7b10825b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7184,26 +7205,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: no
-      value: 23
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[1]
-      value: 
-      objectReference: {fileID: 694192080}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[0]
-      value: 
-      objectReference: {fileID: 1219811880}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ead028158ab54f4bace6c0c7b10825b, type: 3}
 --- !u!4 &839699953 stripped
@@ -7309,6 +7310,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: wayPoint (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: no
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[1]
+      value: 
+      objectReference: {fileID: 481495652}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[0]
+      value: 
+      objectReference: {fileID: 113792313}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[2]
+      value: 
+      objectReference: {fileID: 1792964665}
     - target: {fileID: 3312683996645707755, guid: 2ead028158ab54f4bace6c0c7b10825b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7364,31 +7390,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: no
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[1]
-      value: 
-      objectReference: {fileID: 481495652}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[0]
-      value: 
-      objectReference: {fileID: 113792313}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[2]
-      value: 
-      objectReference: {fileID: 1792964665}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ead028158ab54f4bace6c0c7b10825b, type: 3}
 --- !u!4 &876345164 stripped
@@ -7851,6 +7852,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: wayPoint (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: no
+      value: 27
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[1]
+      value: 
+      objectReference: {fileID: 75932671}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[0]
+      value: 
+      objectReference: {fileID: 1564259654}
     - target: {fileID: 3312683996645707755, guid: 2ead028158ab54f4bace6c0c7b10825b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7906,26 +7927,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: no
-      value: 27
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[1]
-      value: 
-      objectReference: {fileID: 75932671}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[0]
-      value: 
-      objectReference: {fileID: 1564259654}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ead028158ab54f4bace6c0c7b10825b, type: 3}
 --- !u!1001 &933623438
@@ -8204,6 +8205,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: wayPoint (40)
       objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: no
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[1]
+      value: 
+      objectReference: {fileID: 1559371830}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[0]
+      value: 
+      objectReference: {fileID: 296294803}
     - target: {fileID: 3312683996645707755, guid: 2ead028158ab54f4bace6c0c7b10825b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8259,26 +8280,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: no
-      value: 40
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[1]
-      value: 
-      objectReference: {fileID: 1559371830}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[0]
-      value: 
-      objectReference: {fileID: 296294803}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ead028158ab54f4bace6c0c7b10825b, type: 3}
 --- !u!1001 &947627209
@@ -8293,6 +8294,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: wayPoint (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: no
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[1]
+      value: 
+      objectReference: {fileID: 1443414384}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[0]
+      value: 
+      objectReference: {fileID: 481495652}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[2]
+      value: 
+      objectReference: {fileID: 1217131115}
     - target: {fileID: 3312683996645707755, guid: 2ead028158ab54f4bace6c0c7b10825b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8348,31 +8374,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: no
-      value: 17
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[1]
-      value: 
-      objectReference: {fileID: 1443414384}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[0]
-      value: 
-      objectReference: {fileID: 481495652}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[2]
-      value: 
-      objectReference: {fileID: 1217131115}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ead028158ab54f4bace6c0c7b10825b, type: 3}
 --- !u!4 &955433930 stripped
@@ -8472,6 +8473,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: wayPoint (45)
       objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: no
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[1]
+      value: 
+      objectReference: {fileID: 1788050863}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[0]
+      value: 
+      objectReference: {fileID: 1240682704}
     - target: {fileID: 3312683996645707755, guid: 2ead028158ab54f4bace6c0c7b10825b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8527,26 +8548,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: no
-      value: 45
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[1]
-      value: 
-      objectReference: {fileID: 1788050863}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[0]
-      value: 
-      objectReference: {fileID: 1240682704}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ead028158ab54f4bace6c0c7b10825b, type: 3}
 --- !u!1001 &972722769
@@ -9072,6 +9073,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: wayPoint (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: no
+      value: 26
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[1]
+      value: 
+      objectReference: {fileID: 20503515}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[0]
+      value: 
+      objectReference: {fileID: 1792964665}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[2]
+      value: 
+      objectReference: {fileID: 1226246096}
     - target: {fileID: 3312683996645707755, guid: 2ead028158ab54f4bace6c0c7b10825b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9127,31 +9153,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: no
-      value: 26
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[1]
-      value: 
-      objectReference: {fileID: 20503515}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[0]
-      value: 
-      objectReference: {fileID: 1792964665}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[2]
-      value: 
-      objectReference: {fileID: 1226246096}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ead028158ab54f4bace6c0c7b10825b, type: 3}
 --- !u!1 &1024103990
@@ -9693,6 +9694,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: wayPoint (42)
       objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: no
+      value: 42
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[1]
+      value: 
+      objectReference: {fileID: 196395892}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[0]
+      value: 
+      objectReference: {fileID: 1837843353}
     - target: {fileID: 3312683996645707755, guid: 2ead028158ab54f4bace6c0c7b10825b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9748,26 +9769,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: no
-      value: 42
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[1]
-      value: 
-      objectReference: {fileID: 196395892}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[0]
-      value: 
-      objectReference: {fileID: 1837843353}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ead028158ab54f4bace6c0c7b10825b, type: 3}
 --- !u!4 &1061262332 stripped
@@ -9964,6 +9965,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: wayPoint (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: no
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[1]
+      value: 
+      objectReference: {fileID: 1433556835}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[0]
+      value: 
+      objectReference: {fileID: 694192080}
     - target: {fileID: 3312683996645707755, guid: 2ead028158ab54f4bace6c0c7b10825b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10019,26 +10040,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: no
-      value: 25
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[1]
-      value: 
-      objectReference: {fileID: 1433556835}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[0]
-      value: 
-      objectReference: {fileID: 694192080}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ead028158ab54f4bace6c0c7b10825b, type: 3}
 --- !u!1 &1077270641
@@ -10871,6 +10872,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: wayPoint (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: no
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[1]
+      value: 
+      objectReference: {fileID: 1291611956}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[0]
+      value: 
+      objectReference: {fileID: 2129317186}
     - target: {fileID: 3312683996645707755, guid: 2ead028158ab54f4bace6c0c7b10825b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10926,26 +10947,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: no
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[1]
-      value: 
-      objectReference: {fileID: 1291611956}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[0]
-      value: 
-      objectReference: {fileID: 2129317186}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ead028158ab54f4bace6c0c7b10825b, type: 3}
 --- !u!114 &1132147732 stripped
@@ -11205,6 +11206,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: wayPoint (41)
       objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: no
+      value: 41
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[1]
+      value: 
+      objectReference: {fileID: 2070847210}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[0]
+      value: 
+      objectReference: {fileID: 1443414384}
     - target: {fileID: 3312683996645707755, guid: 2ead028158ab54f4bace6c0c7b10825b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11260,26 +11281,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: no
-      value: 41
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[1]
-      value: 
-      objectReference: {fileID: 2070847210}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[0]
-      value: 
-      objectReference: {fileID: 1443414384}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ead028158ab54f4bace6c0c7b10825b, type: 3}
 --- !u!4 &1215226918 stripped
@@ -12082,6 +12083,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: wayPoint (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: no
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[1]
+      value: 
+      objectReference: {fileID: 1443414384}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[0]
+      value: 
+      objectReference: {fileID: 1132147732}
     - target: {fileID: 3312683996645707755, guid: 2ead028158ab54f4bace6c0c7b10825b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12137,26 +12158,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: no
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[1]
-      value: 
-      objectReference: {fileID: 1443414384}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[0]
-      value: 
-      objectReference: {fileID: 1132147732}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ead028158ab54f4bace6c0c7b10825b, type: 3}
 --- !u!114 &1291611956 stripped
@@ -12359,6 +12360,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: wayPoint (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: no
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[1]
+      value: 
+      objectReference: {fileID: 28030800}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[0]
+      value: 
+      objectReference: {fileID: 1053021554}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[2]
+      value: 
+      objectReference: {fileID: 1491718809}
     - target: {fileID: 3312683996645707755, guid: 2ead028158ab54f4bace6c0c7b10825b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12414,31 +12440,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: no
-      value: 19
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[1]
-      value: 
-      objectReference: {fileID: 28030800}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[0]
-      value: 
-      objectReference: {fileID: 1053021554}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[2]
-      value: 
-      objectReference: {fileID: 1491718809}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ead028158ab54f4bace6c0c7b10825b, type: 3}
 --- !u!4 &1313690426 stripped
@@ -12799,6 +12800,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: wayPoint (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: no
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[1]
+      value: 
+      objectReference: {fileID: 481495652}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[0]
+      value: 
+      objectReference: {fileID: 1037296905}
     - target: {fileID: 3312683996645707755, guid: 2ead028158ab54f4bace6c0c7b10825b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12854,26 +12875,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: no
-      value: 31
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[1]
-      value: 
-      objectReference: {fileID: 481495652}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[0]
-      value: 
-      objectReference: {fileID: 1037296905}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ead028158ab54f4bace6c0c7b10825b, type: 3}
 --- !u!4 &1358108074 stripped
@@ -13460,6 +13461,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: wayPoint (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: no
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[1]
+      value: 
+      objectReference: {fileID: 905433174}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[0]
+      value: 
+      objectReference: {fileID: 1291611956}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[2]
+      value: 
+      objectReference: {fileID: 2102549375}
     - target: {fileID: 3312683996645707755, guid: 2ead028158ab54f4bace6c0c7b10825b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13515,31 +13541,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: no
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[1]
-      value: 
-      objectReference: {fileID: 905433174}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[0]
-      value: 
-      objectReference: {fileID: 1291611956}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[2]
-      value: 
-      objectReference: {fileID: 2102549375}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ead028158ab54f4bace6c0c7b10825b, type: 3}
 --- !u!114 &1443414384 stripped
@@ -13906,6 +13907,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: wayPoint (39)
       objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: no
+      value: 39
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[1]
+      value: 
+      objectReference: {fileID: 1800382174}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[0]
+      value: 
+      objectReference: {fileID: 601213922}
     - target: {fileID: 3312683996645707755, guid: 2ead028158ab54f4bace6c0c7b10825b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13961,26 +13982,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: no
-      value: 39
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[1]
-      value: 
-      objectReference: {fileID: 1800382174}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[0]
-      value: 
-      objectReference: {fileID: 601213922}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ead028158ab54f4bace6c0c7b10825b, type: 3}
 --- !u!1001 &1503450038
@@ -14186,6 +14187,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: wayPoint (43)
       objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: no
+      value: 43
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[1]
+      value: 
+      objectReference: {fileID: 694192080}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[0]
+      value: 
+      objectReference: {fileID: 1754937519}
     - target: {fileID: 3312683996645707755, guid: 2ead028158ab54f4bace6c0c7b10825b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14241,26 +14262,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: no
-      value: 43
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[1]
-      value: 
-      objectReference: {fileID: 694192080}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[0]
-      value: 
-      objectReference: {fileID: 1754937519}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ead028158ab54f4bace6c0c7b10825b, type: 3}
 --- !u!1001 &1531934962
@@ -14275,6 +14276,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: wayPoint (44)
       objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: no
+      value: 44
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[1]
+      value: 
+      objectReference: {fileID: 1169034631}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[0]
+      value: 
+      objectReference: {fileID: 1037296905}
     - target: {fileID: 3312683996645707755, guid: 2ead028158ab54f4bace6c0c7b10825b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14330,26 +14351,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: no
-      value: 44
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[1]
-      value: 
-      objectReference: {fileID: 1169034631}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[0]
-      value: 
-      objectReference: {fileID: 1037296905}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ead028158ab54f4bace6c0c7b10825b, type: 3}
 --- !u!4 &1548546024 stripped
@@ -14582,6 +14583,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: wayPoint (34)
       objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: no
+      value: 34
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[1]
+      value: 
+      objectReference: {fileID: 1837843353}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[0]
+      value: 
+      objectReference: {fileID: 1800382174}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[2]
+      value: 
+      objectReference: {fileID: 1181742706}
     - target: {fileID: 3312683996645707755, guid: 2ead028158ab54f4bace6c0c7b10825b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14637,31 +14663,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: no
-      value: 34
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[1]
-      value: 
-      objectReference: {fileID: 1837843353}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[0]
-      value: 
-      objectReference: {fileID: 1800382174}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[2]
-      value: 
-      objectReference: {fileID: 1181742706}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ead028158ab54f4bace6c0c7b10825b, type: 3}
 --- !u!4 &1592238823 stripped
@@ -14943,6 +14944,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: wayPoint (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: no
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[1]
+      value: 
+      objectReference: {fileID: 1181742706}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[0]
+      value: 
+      objectReference: {fileID: 1053021554}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[2]
+      value: 
+      objectReference: {fileID: 462694308}
     - target: {fileID: 3312683996645707755, guid: 2ead028158ab54f4bace6c0c7b10825b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14998,31 +15024,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: no
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[1]
-      value: 
-      objectReference: {fileID: 1181742706}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[0]
-      value: 
-      objectReference: {fileID: 1053021554}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[2]
-      value: 
-      objectReference: {fileID: 462694308}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ead028158ab54f4bace6c0c7b10825b, type: 3}
 --- !u!4 &1684775320 stripped
@@ -16743,6 +16744,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: wayPoint (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: no
+      value: 29
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[1]
+      value: 
+      objectReference: {fileID: 1037296905}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[0]
+      value: 
+      objectReference: {fileID: 75932671}
     - target: {fileID: 3312683996645707755, guid: 2ead028158ab54f4bace6c0c7b10825b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -16798,26 +16819,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: no
-      value: 29
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[1]
-      value: 
-      objectReference: {fileID: 1037296905}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[0]
-      value: 
-      objectReference: {fileID: 75932671}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ead028158ab54f4bace6c0c7b10825b, type: 3}
 --- !u!1001 &1902571479
@@ -17147,6 +17148,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: wayPoint (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: no
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[1]
+      value: 
+      objectReference: {fileID: 2102549375}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[0]
+      value: 
+      objectReference: {fileID: 1104435496}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[2]
+      value: 
+      objectReference: {fileID: 59749858}
     - target: {fileID: 3312683996645707755, guid: 2ead028158ab54f4bace6c0c7b10825b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -17202,31 +17228,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: no
-      value: 16
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[1]
-      value: 
-      objectReference: {fileID: 2102549375}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[0]
-      value: 
-      objectReference: {fileID: 1104435496}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[2]
-      value: 
-      objectReference: {fileID: 59749858}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ead028158ab54f4bace6c0c7b10825b, type: 3}
 --- !u!1001 &1936830953
@@ -17241,6 +17242,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: wayPoint (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: no
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[0]
+      value: 
+      objectReference: {fileID: 266358299}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[1]
+      value: 
+      objectReference: {fileID: 2129317186}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[2]
+      value: 
+      objectReference: {fileID: 168544629}
     - target: {fileID: 3312683996645707755, guid: 2ead028158ab54f4bace6c0c7b10825b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -17296,31 +17322,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: no
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[0]
-      value: 
-      objectReference: {fileID: 266358299}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[1]
-      value: 
-      objectReference: {fileID: 2129317186}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[2]
-      value: 
-      objectReference: {fileID: 168544629}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ead028158ab54f4bace6c0c7b10825b, type: 3}
 --- !u!114 &1936830954 stripped
@@ -17432,6 +17433,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: wayPoint (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: no
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[1]
+      value: 
+      objectReference: {fileID: 266358299}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[0]
+      value: 
+      objectReference: {fileID: 509932754}
     - target: {fileID: 3312683996645707755, guid: 2ead028158ab54f4bace6c0c7b10825b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -17487,26 +17508,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: no
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[1]
-      value: 
-      objectReference: {fileID: 266358299}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[0]
-      value: 
-      objectReference: {fileID: 509932754}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ead028158ab54f4bace6c0c7b10825b, type: 3}
 --- !u!114 &1949168240 stripped
@@ -17691,6 +17692,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: wayPoint (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: no
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[1]
+      value: 
+      objectReference: {fileID: 59749858}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[0]
+      value: 
+      objectReference: {fileID: 675344227}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[2]
+      value: 
+      objectReference: {fileID: 1240682704}
     - target: {fileID: 3312683996645707755, guid: 2ead028158ab54f4bace6c0c7b10825b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -17746,31 +17772,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: no
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[1]
-      value: 
-      objectReference: {fileID: 59749858}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[0]
-      value: 
-      objectReference: {fileID: 675344227}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[2]
-      value: 
-      objectReference: {fileID: 1240682704}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ead028158ab54f4bace6c0c7b10825b, type: 3}
 --- !u!1001 &1987383849
@@ -18113,6 +18114,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: wayPoint (37)
       objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: no
+      value: 37
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[1]
+      value: 
+      objectReference: {fileID: 1577306913}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[0]
+      value: 
+      objectReference: {fileID: 1792964665}
     - target: {fileID: 3312683996645707755, guid: 2ead028158ab54f4bace6c0c7b10825b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -18168,26 +18189,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: no
-      value: 37
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[1]
-      value: 
-      objectReference: {fileID: 1577306913}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[0]
-      value: 
-      objectReference: {fileID: 1792964665}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ead028158ab54f4bace6c0c7b10825b, type: 3}
 --- !u!4 &2049286018 stripped
@@ -18310,6 +18311,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: wayPoint (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: no
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[1]
+      value: 
+      objectReference: {fileID: 1754937519}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[0]
+      value: 
+      objectReference: {fileID: 1559371830}
     - target: {fileID: 3312683996645707755, guid: 2ead028158ab54f4bace6c0c7b10825b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -18365,26 +18386,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: no
-      value: 35
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[1]
-      value: 
-      objectReference: {fileID: 1754937519}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[0]
-      value: 
-      objectReference: {fileID: 1559371830}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ead028158ab54f4bace6c0c7b10825b, type: 3}
 --- !u!1001 &2064490805
@@ -18557,6 +18558,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: wayPoint (38)
       objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: no
+      value: 38
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[1]
+      value: 
+      objectReference: {fileID: 296294803}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[0]
+      value: 
+      objectReference: {fileID: 1217131115}
     - target: {fileID: 3312683996645707755, guid: 2ead028158ab54f4bace6c0c7b10825b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -18612,26 +18633,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: no
-      value: 38
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[1]
-      value: 
-      objectReference: {fileID: 296294803}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[0]
-      value: 
-      objectReference: {fileID: 1217131115}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ead028158ab54f4bace6c0c7b10825b, type: 3}
 --- !u!1001 &2070847209
@@ -18645,61 +18646,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wayPoint (7)
-      objectReference: {fileID: 0}
-    - target: {fileID: 3312683996645707755, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 4.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 3312683996645707755, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 9.46
-      objectReference: {fileID: 0}
-    - target: {fileID: 3312683996645707755, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3312683996645707755, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3312683996645707755, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3312683996645707755, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3312683996645707755, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3312683996645707755, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 3312683996645707755, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3312683996645707755, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3312683996645707755, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
         type: 3}
@@ -18871,6 +18817,61 @@ PrefabInstance:
       propertyPath: neighborWps.Array.data[31]
       value: 
       objectReference: {fileID: 509932754}
+    - target: {fileID: 3312683996645707755, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 3312683996645707755, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 9.46
+      objectReference: {fileID: 0}
+    - target: {fileID: 3312683996645707755, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3312683996645707755, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3312683996645707755, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3312683996645707755, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3312683996645707755, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3312683996645707755, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3312683996645707755, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3312683996645707755, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3312683996645707755, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ead028158ab54f4bace6c0c7b10825b, type: 3}
 --- !u!114 &2070847210 stripped
@@ -19584,6 +19585,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: wayPoint (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: no
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[1]
+      value: 
+      objectReference: {fileID: 1132147732}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[0]
+      value: 
+      objectReference: {fileID: 1936830954}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[2]
+      value: 
+      objectReference: {fileID: 113792313}
     - target: {fileID: 3312683996645707755, guid: 2ead028158ab54f4bace6c0c7b10825b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -19639,31 +19665,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: no
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[1]
-      value: 
-      objectReference: {fileID: 1132147732}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[0]
-      value: 
-      objectReference: {fileID: 1936830954}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[2]
-      value: 
-      objectReference: {fileID: 113792313}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ead028158ab54f4bace6c0c7b10825b, type: 3}
 --- !u!114 &2129317186 stripped
@@ -19690,6 +19691,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: wayPoint (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: no
+      value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[1]
+      value: 
+      objectReference: {fileID: 1491718809}
+    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
+        type: 3}
+      propertyPath: neighborWps.Array.data[0]
+      value: 
+      objectReference: {fileID: 1564259654}
     - target: {fileID: 3312683996645707755, guid: 2ead028158ab54f4bace6c0c7b10825b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -19745,26 +19766,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: no
-      value: 36
-      objectReference: {fileID: 0}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[1]
-      value: 
-      objectReference: {fileID: 1491718809}
-    - target: {fileID: 4062175534948525566, guid: 2ead028158ab54f4bace6c0c7b10825b,
-        type: 3}
-      propertyPath: neighborWps.Array.data[0]
-      value: 
-      objectReference: {fileID: 1564259654}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ead028158ab54f4bace6c0c7b10825b, type: 3}
 --- !u!1001 &2694977596399916512

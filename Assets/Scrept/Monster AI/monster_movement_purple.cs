@@ -9,10 +9,10 @@ public class monster_movement_purple : monster_movement
     int startTime;
     public List<wayPoint> PatrolPath;
 
-    void Update()
+    void FixedUpdate()
     {
         recoverTimer();
-        if (curWp == GameObject.Find("GameManager").GetComponent<GameManager>().StartWP)
+        if (curWp == GameManager.StartWP)
         {
             recover(5);
         }
@@ -29,13 +29,13 @@ public class monster_movement_purple : monster_movement
     {
         if (naviOn == false)
         {
-            if (GameObject.FindWithTag("pacman"))//If find Pac-Man, choose one from random moves or run away.
+            if (GameManager.pacman)//If find Pac-Man, choose one from random moves or run away.
             {
                 if (Random.Range(0,2) == 0)
                 {
                     return redomToNext();
                 }
-                return naviTo(ranAway(GameObject.FindWithTag("pacman")));
+                return naviTo(ranAway(GameManager.pacman));
             }
             //Otherwise, randomly select a forward at the adjacent point of the current way point.
             return redomToNext();
@@ -55,7 +55,6 @@ public class monster_movement_purple : monster_movement
     private wayPoint ranAway(GameObject aimObj)
     {
         wayPoint aimWp = null;
-        List<wayPoint> Wps = getWayPoints();
         float maxDistance = 0;
         //Choose a way point furthest away from Pac-Man and navigate
         for (int i = 0; i < Wps.Count; i++)
@@ -100,7 +99,7 @@ public class monster_movement_purple : monster_movement
         monster_new.GetComponent<monster_movement>().curWp = this.curWp;
         monster_new.GetComponent<monster_movement>().lastWp = this.lastWp;
         monster_new.GetComponent<monster_movement>().nextWp = this.nextWp;
-        monster_new.GetComponent<monster_movement>().weekUpTime = (int)GameObject.Find("GameManager").GetComponent<GameManager>().gameTime + weekUpTime;
+        monster_new.GetComponent<monster_movement>().weekUpTime = (int)GameManager.gameTime + weekUpTime;
 
         Instantiate(monster_new, gameObject.transform.position, Quaternion.identity);
         Destroy(gameObject);
@@ -112,7 +111,7 @@ public class monster_movement_purple : monster_movement
         {
             //When the purple monster meets the Pac-Man, it immediately accelerates back to the monster box.
             naviOn = true;
-            this.naviWp = GameObject.Find("GameManager").GetComponent<GameManager>().StartWP;
+            this.naviWp = GameManager.StartWP;
             this.speed = 0.3f;
             gameObject.GetComponent<SpriteRenderer>().color = new Color(0,0,0);
             GameObject.Find("GameManager").GetComponent<GameManager>().eatMonster.Play();

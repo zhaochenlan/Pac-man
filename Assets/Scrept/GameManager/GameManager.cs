@@ -7,16 +7,17 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public int score = 0;
-    public float gameTime = 0;
+    public static float gameTime = 0;
     public int pacman_life = 3;
     public int noOfDots = 120;
-    public GameObject pacman;
+    public GameObject pacman_prototype;
+    public static GameObject pacman;
     public GameObject pacmanLife;
-    public wayPoint StartWP;
+    public static wayPoint StartWP;
     public wayPoint pacmanStartWP;
     protected float GameStartTime;
 
-	public GameObject redMonster;
+    public GameObject redMonster;
 	public GameObject blueMonster;
 	public GameObject pinkMonster;
 	public GameObject greenMonster;
@@ -30,42 +31,52 @@ public class GameManager : MonoBehaviour
     public AudioSource eatMonster;
     public AudioSource winMusic;
 
-    enum gameState
+    public Text ScoreLable;
+    public Text TimeLable;
+
+    enum GameState
     {
-        ready,
         inGame,
         gameOver
     }
 
-    gameState myGameState = gameState.inGame;
+    GameState myGameState;
+
+    private void Awake()
+    {
+        StartWP = GameObject.Find("wayPoint").GetComponent<wayPoint>();
+        setUpGame();
+        ScoreLable = GameObject.Find("Score").GetComponent<Text>();
+        TimeLable = GameObject.Find("Timer").GetComponent<Text>();
+    }
 
     // Start is called before the first frame update
     void Start()
     {
-        setUpGame();
-        myGameState = gameState.inGame;
+        pacman = GameObject.FindWithTag("pacman");
+        myGameState = GameState.inGame;
         Time.timeScale = 1;
     }
 
     // Update is called once per frame
     void Update()
     {
-        GameObject.Find("Score").GetComponent<Text>().text = score+"";
-
-        gameTime = Time.time - GameStartTime;
-        GameObject.Find("Timer").GetComponent<Text>().text = "time:"+(int)gameTime;
         inputManger();
+        if (myGameState == GameState.inGame)
+        {
+            ScoreLable.text = score + "";
 
-        if (score>=noOfDots) {
-            score = 0;
-            win();
+            gameTime = Time.time - GameStartTime;
+            TimeLable.text = "time:" + (int)gameTime;
+
+            if (score >= noOfDots)
+                win();
         }
-
     }
 
     void inputManger()
     {
-        if (Input.GetKeyDown(KeyCode.Escape) && myGameState==gameState.gameOver)
+        if (Input.GetKeyDown(KeyCode.Escape) && myGameState == GameState.gameOver)
         {
             SceneManager.LoadScene("MenuScene");
         }
@@ -80,7 +91,7 @@ public class GameManager : MonoBehaviour
 
     virtual protected void setUpMonsters()
     {
-        GameObject monster_new = null;
+        GameObject monster_new;
         monster_new = redMonster;
         monster_new.GetComponent<monster_movement>().weekUpTime = 1;
         monster_new.GetComponent<monster_movement>().nextWp = StartWP;
@@ -114,7 +125,7 @@ public class GameManager : MonoBehaviour
         GameObject.Find("GameOver").GetComponent<Text>().text = "  You Win";
         GameObject.Find("notice").GetComponent<Text>().text = "press 'Esc' back to menu";
         winMusic.Play();
-        myGameState = gameState.gameOver;
+        myGameState = GameState.gameOver;
         Time.timeScale = 0;
     }
 
@@ -122,7 +133,7 @@ public class GameManager : MonoBehaviour
     {
         GameObject.Find("GameOver").GetComponent<Text>().text = "Game Over";
         GameObject.Find("notice").GetComponent<Text>().text = "press 'Esc' back to menu";
-        myGameState = gameState.gameOver;
+        myGameState = GameState.gameOver;
         Time.timeScale = 0;
     }
 
@@ -132,11 +143,19 @@ public class GameManager : MonoBehaviour
         death.Play();
         if (pacman_life >= 0)
         {
-            Object.Instantiate(pacman, pacmanStartWP.transform.position, Quaternion.identity);
+            Object.Instantiate(pacman_prototype, pacmanStartWP.transform.position, Quaternion.identity);
+            StartCoroutine(FindNewPacman());
+
         } else
         {
             gameOver();
         }
         
+    }
+
+    IEnumerator FindNewPacman()
+    {
+        yield return new WaitForSeconds(0.1f);
+        pacman = GameObject.FindWithTag("pacman");
     }
 }

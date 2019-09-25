@@ -14,7 +14,11 @@ public class monster_movement : MonoBehaviour
     public wayPoint nextWp;
     public wayPoint naviWp;
 
-    private wayPoint boxWp;
+    private wayPoint nextboxWp;
+    private wayPoint[] boxWps;
+
+    protected List<wayPoint> Wps;
+    protected Rigidbody2D body;
 
     public enum monsterColor
     {
@@ -22,7 +26,6 @@ public class monster_movement : MonoBehaviour
         blue,
         green,
         pink,
-        black
     }
 
     public monsterColor myColor;
@@ -32,7 +35,10 @@ public class monster_movement : MonoBehaviour
     protected void Start()
     {
         setUp();
-        boxWp = GameObject.Find("GameManager").GetComponent<GameManager>().boxWP[Random.Range(0, 4)];
+        body = GetComponent<Rigidbody2D>();
+        getWayPoints();
+        boxWps = GameObject.Find("GameManager").GetComponent<GameManager>().boxWP;
+        nextboxWp = boxWps[Random.Range(0, 4)];
     }
 
     virtual protected void setUp()
@@ -41,9 +47,9 @@ public class monster_movement : MonoBehaviour
         dest = transform.position;
     }
 
-    protected void FixedUpdate()
+    protected void Update()
     {
-        if (GameObject.Find("GameManager").GetComponent<GameManager>().gameTime > weekUpTime) {
+        if (GameManager.gameTime > weekUpTime) {
             moveToNext();
         } else
         {
@@ -53,15 +59,15 @@ public class monster_movement : MonoBehaviour
 
     protected void moveInBox()
     {
-        float distance = Vector3.Distance(transform.position, boxWp.transform.position);
+        float distance = Vector3.Distance(transform.position, nextboxWp.transform.position);
         if (distance > 0.1f)
         {
-            Vector2 p = Vector2.MoveTowards(transform.position, boxWp.transform.position, speed);
-            GetComponent<Rigidbody2D>().MovePosition(p);
+            Vector2 p = Vector2.MoveTowards(transform.position, nextboxWp.transform.position, speed);
+            body.MovePosition(p);
         }
         else
         {
-            boxWp = GameObject.Find("GameManager").GetComponent<GameManager>().boxWP[Random.Range(0, 4)];
+            nextboxWp = boxWps[Random.Range(0, 4)];
             changeDirection();
         }
     }
@@ -73,7 +79,7 @@ public class monster_movement : MonoBehaviour
         if (distance > 0.1f)
         {
             Vector2 p = Vector2.MoveTowards(transform.position, nextWp.transform.position, speed);
-            GetComponent<Rigidbody2D>().MovePosition(p);
+            body.MovePosition(p);
         }
         else
         {
@@ -98,12 +104,12 @@ public class monster_movement : MonoBehaviour
             r = Random.Range(0, nextWp.neighborWps.Count);
             i++;
 
-            if(i > 100 && nextWp.neighborWps[r] != GameObject.Find("GameManager").GetComponent<GameManager>().StartWP)
+            if(i > 100 && nextWp.neighborWps[r] != GameManager.StartWP)
             {
                 break;
             }
 
-        } while (nextWp.neighborWps[r] == lastWp || nextWp.neighborWps[r] == GameObject.Find("GameManager").GetComponent<GameManager>().StartWP);//防止返回上一个路径点
+        } while (nextWp.neighborWps[r] == lastWp || nextWp.neighborWps[r] == GameManager.StartWP);//Prevent returning to the previous path point
 
         return nextWp.neighborWps[r];
     }
@@ -116,13 +122,13 @@ public class monster_movement : MonoBehaviour
         return aimWp;
     }
 
-    protected List<wayPoint> getNavi(wayPoint curWp, wayPoint aimWp) { //Find the shortest path to the target way point
+    protected List<wayPoint> getNavi(wayPoint curWp, wayPoint aimWp) { //Find the shortest path from cur way point to the target way point
         List<wayPoint> markedWp = new List<wayPoint>();
         List<wayPoint> ShortestPath = new List<wayPoint>();
         List<wayPoint> WaitList = new List<wayPoint>();
         List<int> fatherPoints = new List<int>();
-        wayPoint fp = null;
-        int a = 0;
+        wayPoint fp;
+        int mark;
 
         WaitList.Add(curWp);
         markedWp.Add(curWp);
@@ -143,13 +149,13 @@ public class monster_movement : MonoBehaviour
                         WaitList.Add(WaitList[i].neighborWps[j]);
                         //Find the target way point
                         ShortestPath.Add(aimWp);
-                        a = fatherPoints[fatherPoints.Count-1];
+                        mark = fatherPoints[fatherPoints.Count-1];
                         //Get the shortest path through the parent way point
                         while (ShortestPath[0]!=curWp)
                         {
-                            fp = WaitList[a];
+                            fp = WaitList[mark];
                             ShortestPath.Insert(0,fp);
-                            a = fatherPoints[a];
+                            mark = fatherPoints[mark];
                         }
 
                         return ShortestPath;
@@ -167,17 +173,16 @@ public class monster_movement : MonoBehaviour
 
     }
 
-    protected List<wayPoint> getWayPoints() {
+    protected void getWayPoints() {
         GameObject[] allWpObj;
-        List<wayPoint> Wps = new List<wayPoint>();
-
         allWpObj = GameObject.FindGameObjectsWithTag("wayPoints");
+        Wps = new List<wayPoint>();
+
         for (int i = 0; i < allWpObj.Length; i++)
         {
             Wps.Add(allWpObj[i].GetComponent<wayPoint>());
         }
 
-        return Wps;
     }
 
     public void inToPurple()//Turn purple and start to escape from Pac-Man
