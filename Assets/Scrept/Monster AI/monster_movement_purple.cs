@@ -5,7 +5,7 @@ using UnityEngine;
 public class monster_movement_purple : monster_movement
 {
     bool naviOn = false;
-    int Timer = 5;
+    int Timer = 6;
     int startTime;
     public List<wayPoint> PatrolPath;
 

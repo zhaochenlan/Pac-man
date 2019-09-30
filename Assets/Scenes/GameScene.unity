@@ -1534,9 +1534,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 287f2ad413c8049488308c9ffc9f08b3, type: 3}
+  m_audioClip: {fileID: 8300000, guid: b6426f0f4214148aeb567fbde0e8af6e, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2540,7 +2540,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 71a12ec1e08124fc3899144f3b2c06d7, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 8e19d69e4c21f4d179fb0d8cea9d47f7, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -7445,7 +7445,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: d71b6951684614d55b5a7a274b1e4ece, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 7391075ae46324dd0901605ced7b65b1, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -9196,7 +9196,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 88da3f93086604ce49525a6f72af2cb1, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 278c95a16a0c34af4984246faae19e2c, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -11721,7 +11721,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: e6ed7bffb25e14370ba987f9aa3976a9, type: 3}
+  m_audioClip: {fileID: 8300000, guid: c3a04e1543f4c43b9a03971b0c78a90b, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -20087,6 +20087,11 @@ PrefabInstance:
         type: 3}
       propertyPath: Pan2D
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6969700338934711712, guid: 84ff41a0faf2846f886fc5b5cf190464,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 84ff41a0faf2846f886fc5b5cf190464, type: 3}

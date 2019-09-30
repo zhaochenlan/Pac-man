@@ -2,12 +2,14 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scrept/Monster AI/monster_movement_purple.cs">
     <Files>
       <File FileName="Assets/Scrept/GameManager/GameManager.cs" Line="152" Column="10" />
-      <File FileName="Assets/Scrept/Monster AI/monster_movement_purple.cs" Line="15" Column="42" />
+      <File FileName="Assets/Scrept/Monster AI/monster_movement_purple.cs" Line="8" Column="18" />
+      <File FileName="Assets/Scrept/Monster AI/monster_movement.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scrept/Monster AI/monster_movement.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="4d53ca8d-6973-42a2-87e1-0a6207deaa3a" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="bf10a2a1-cc88-4b79-ace4-8c81619de052" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
