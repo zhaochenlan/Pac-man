@@ -151,7 +151,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc05b486f56bd4ecdab61e0bd7f2a3f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.08
+  speed: 4
   animatorController: {fileID: 3833803475259833611}
   lastWp: {fileID: 0}
   curWp: {fileID: 0}

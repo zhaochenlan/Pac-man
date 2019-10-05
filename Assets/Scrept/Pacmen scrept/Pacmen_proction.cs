@@ -14,6 +14,16 @@ public class Pacmen_proction : MonoBehaviour
     }
 
     // Update is called once per frame
+    void FixedUpdate()
+    {
+        dispierTime--;
+        if (dispierTime < 0)
+        {
+            gameObject.GetComponent<SpriteRenderer>().enabled = true;
+            Destroy(gameObject.GetComponent<Pacmen_proction>());
+        }
+    }
+
     void Update()
     {
         calTime += Time.time;//Accumulate the interval of each frame
@@ -24,13 +34,6 @@ public class Pacmen_proction : MonoBehaviour
         else
         {
             gameObject.GetComponent<SpriteRenderer>().enabled = false;
-        }
-
-        dispierTime--;
-        if (dispierTime < 0)
-        {
-            gameObject.GetComponent<SpriteRenderer>().enabled = true;
-            Destroy(gameObject.GetComponent<Pacmen_proction>());
         }
     }
 }

@@ -36,7 +36,7 @@ public class ManueController : MonoBehaviour
             }
             if (EventSystem.current.currentSelectedGameObject.name == "Button_exit")
             {
-                Application.Quit();
+                UnityEditor.EditorApplication.isPlaying = false;
             }
         }
     }

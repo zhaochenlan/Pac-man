@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class monster_movement : MonoBehaviour
 {
-    public float speed = 0.08f;
+    public float speed = 4f;
     protected Vector2 dest = Vector2.zero;
     public Animator animatorController;
     Collider2D cor2D;
@@ -18,7 +18,6 @@ public class monster_movement : MonoBehaviour
     private wayPoint[] boxWps;
 
     protected List<wayPoint> Wps;
-    protected Rigidbody2D body;
 
     public enum monsterColor
     {
@@ -35,7 +34,6 @@ public class monster_movement : MonoBehaviour
     protected void Start()
     {
         setUp();
-        body = GetComponent<Rigidbody2D>();
         getWayPoints();
         boxWps = GameObject.Find("GameManager").GetComponent<GameManager>().boxWP;
         nextboxWp = boxWps[Random.Range(0, 4)];
@@ -57,13 +55,12 @@ public class monster_movement : MonoBehaviour
         }
     }
 
-    protected void moveInBox()
+    protected void moveInBox()//Randomly move in the box before the monster wakes up
     {
         float distance = Vector3.Distance(transform.position, nextboxWp.transform.position);
         if (distance > 0.1f)
         {
-            Vector2 p = Vector2.MoveTowards(transform.position, nextboxWp.transform.position, speed);
-            body.MovePosition(p);
+            transform.position = Vector2.MoveTowards(transform.position, nextboxWp.transform.position, Time.deltaTime * speed);
         }
         else
         {
@@ -78,8 +75,7 @@ public class monster_movement : MonoBehaviour
 
         if (distance > 0.1f)
         {
-            Vector2 p = Vector2.MoveTowards(transform.position, nextWp.transform.position, speed);
-            body.MovePosition(p);
+            transform.position = Vector2.MoveTowards(transform.position, nextWp.transform.position, Time.deltaTime * speed);
         }
         else
         {
@@ -90,16 +86,16 @@ public class monster_movement : MonoBehaviour
         }
     }
 
-   virtual protected wayPoint findNextWp() {
+   virtual protected wayPoint findNextWp() {//get next way point. Will be implement by different monster's AI.
         return redomToNext();
     }
 
     protected wayPoint redomToNext()
     {
-        //Randomly select a forward at the adjacent point of the current way point
         int r;
         int i = 0;
-        do
+
+        do//Randomly select a forward at the adjacent point of the current way point
         {
             r = Random.Range(0, nextWp.neighborWps.Count);
             i++;
@@ -114,7 +110,8 @@ public class monster_movement : MonoBehaviour
         return nextWp.neighborWps[r];
     }
 
-    protected wayPoint naviTo(wayPoint aimWp) {
+    protected wayPoint naviTo(wayPoint aimWp)//Get the first Way point on the navigation path
+    {
         if(curWp != aimWp)
         {
             return getNavi(this.curWp, aimWp)[1];
@@ -173,7 +170,7 @@ public class monster_movement : MonoBehaviour
 
     }
 
-    protected void getWayPoints() {
+    protected void getWayPoints() {//get all way points on the map
         GameObject[] allWpObj;
         allWpObj = GameObject.FindGameObjectsWithTag("wayPoints");
         Wps = new List<wayPoint>();
@@ -203,7 +200,8 @@ public class monster_movement : MonoBehaviour
         Destroy(gameObject);
     }
 
-    virtual protected void changeDirection() {
+    virtual protected void changeDirection()//Change the animation by the current direction of movement
+    {
         Vector2 dir = (Vector2)nextWp.transform.position - (Vector2)transform.position;
         if (dir.x > 0.5) {
             animatorController.SetTrigger("right");

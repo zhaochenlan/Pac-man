@@ -4,19 +4,8 @@ using UnityEngine;
 
 public class PowerUp : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    void OnTriggerEnter2D(Collider2D co2)
+    void OnTriggerEnter2D(Collider2D co2)//pac-man eat power-up pill, and all monsters transfer into purple monster
     {
         if (co2.tag == "pacman")
         {
@@ -25,7 +14,7 @@ public class PowerUp : MonoBehaviour
             {
                 monsters[i].GetComponent<monster_movement>().inToPurple();
             }
-            GameObject.Find("GameManager").GetComponent<GameManager>().powerUp.Play();
+            GameManager.powerUp.Play();
             Destroy(gameObject);
         }
     }

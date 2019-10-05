@@ -25,11 +25,11 @@ public class GameManager : MonoBehaviour
     public List<wayPoint> PatrolPath;
     public wayPoint[] boxWP;
 
-    public AudioSource eatDots;
-    public AudioSource death;
-    public AudioSource powerUp;
-    public AudioSource eatMonster;
-    public AudioSource winMusic;
+    public static AudioSource eatDots;
+    public static AudioSource death;
+    public static AudioSource powerUp;
+    public static AudioSource eatMonster;
+    public static AudioSource winMusic;
 
     public Text ScoreLable;
     public Text TimeLable;
@@ -48,6 +48,7 @@ public class GameManager : MonoBehaviour
         setUpGame();
         ScoreLable = GameObject.Find("Score").GetComponent<Text>();
         TimeLable = GameObject.Find("Timer").GetComponent<Text>();
+        setUpAudio();
     }
 
     // Start is called before the first frame update
@@ -56,6 +57,7 @@ public class GameManager : MonoBehaviour
         pacman = GameObject.FindWithTag("pacman");
         myGameState = GameState.inGame;
         Time.timeScale = 1;
+        Application.targetFrameRate = 60;
     }
 
     // Update is called once per frame
@@ -72,6 +74,14 @@ public class GameManager : MonoBehaviour
             if (score >= noOfDots)
                 win();
         }
+    }
+
+    void setUpAudio() {
+        eatDots = GameObject.Find("EatDots").GetComponent<AudioSource>();
+        death = GameObject.Find("Death").GetComponent<AudioSource>();
+        powerUp = GameObject.Find("powerUp").GetComponent<AudioSource>();
+        eatMonster = GameObject.Find("EatMonster").GetComponent<AudioSource>();
+        winMusic = GameObject.Find("Ready").GetComponent<AudioSource>();
     }
 
     void inputManger()

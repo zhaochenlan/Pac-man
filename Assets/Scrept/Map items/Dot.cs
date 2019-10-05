@@ -4,25 +4,15 @@ using UnityEngine;
 
 public class Dot : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    //static AudioSource eatDots = GameObject.Find("GameManager").GetComponent<GameManager>().eatDots;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    void OnTriggerEnter2D(Collider2D co2)
+    void OnTriggerEnter2D(Collider2D co2)//pac-man eat dot and earn score
     {
         if (co2.tag == "pacman")
         {
             GameObject.Find("GameManager").GetComponent<GameManager>().score +=1;
-            if(!GameObject.Find("GameManager").GetComponent<GameManager>().eatDots.isPlaying)
-                GameObject.Find("GameManager").GetComponent<GameManager>().eatDots.Play();
+            if(!GameManager.eatDots.isPlaying)
+                GameManager.eatDots.Play();
             Destroy(gameObject);
         }
     }

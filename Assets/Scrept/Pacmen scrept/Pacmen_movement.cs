@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Pacmen_movement : MonoBehaviour
 {
-    public float speed = 0.1f;
-    private Vector2 dest = Vector2.zero;
+    public float speed = 5f;
+    private Vector2 dest;
     public Animator animatorController;
     enum Direction {
         stop,
@@ -20,7 +20,7 @@ public class Pacmen_movement : MonoBehaviour
 
     private void Start()
     {
-        dest = transform.position;
+        dest = Vector2.zero;
     }
 
     private void FixedUpdate()
@@ -78,34 +78,40 @@ public class Pacmen_movement : MonoBehaviour
         }
     }
 
-    private void AutoMove() {
-
-        Vector2 temp = Vector2.MoveTowards(transform.position, dest, speed);
-        GetComponent<Rigidbody2D>().MovePosition(temp);
+    private void AutoMove()//If the direction does not change, Pac-Man will continue to move forward in the current direction.
+    {
 
         if (myDirection == Direction.up && validMove(Vector2.up)) {
-            dest = (Vector2)transform.position + Vector2.up;
+            dest = Vector2.up;
+            Move();
         }
         if (myDirection == Direction.down && validMove(Vector2.down)) {
-            dest = (Vector2)transform.position + Vector2.down;
+            dest = Vector2.down;
+            Move();
         }
         if (myDirection == Direction.left && validMove(Vector2.left)) {
-            dest = (Vector2)transform.position + Vector2.left;
+            dest = Vector2.left;
+            Move();
         }
         if (myDirection == Direction.right && validMove(Vector2.right)) {
-            dest = (Vector2)transform.position + Vector2.right;
+            dest = Vector2.right;
+            Move();
         }
+        
+    }
 
+    private void Move()//Continuous movement and independent of the frame
+    {
+        transform.Translate(dest * Time.deltaTime * speed, Space.World);
     }
 
 
-    //Determine if there is a wall in front
-    bool validMove(Vector2 dir)
+    bool validMove(Vector2 dir)//Determine if there is a wall in front
     {
         Vector2 pos = transform.position;
-        for (int i = 10; i > 0; i--)
+        for (int i = 5; i > 0; i--)//Check many times to prevent detection of monsters and ignore walls
         {
-            RaycastHit2D hit = Physics2D.Linecast(pos + dir * i / 8, pos);
+            RaycastHit2D hit = Physics2D.Linecast(pos + dir * i / 5, pos);
 
             if (hit.collider.tag == "wall")
             {

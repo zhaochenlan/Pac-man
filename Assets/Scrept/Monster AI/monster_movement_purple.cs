@@ -112,9 +112,9 @@ public class monster_movement_purple : monster_movement
             //When the purple monster meets the Pac-Man, it immediately accelerates back to the monster box.
             naviOn = true;
             this.naviWp = GameManager.StartWP;
-            this.speed = 0.3f;
+            this.speed = 15f;
             gameObject.GetComponent<SpriteRenderer>().color = new Color(0,0,0);
-            GameObject.Find("GameManager").GetComponent<GameManager>().eatMonster.Play();
+            GameManager.eatMonster.Play();
         }
 
     }
