@@ -33,7 +33,7 @@ public class Pacmen_movement : MonoBehaviour
         }
     }
 
-    private void CheckButtonState() {
+    private void CheckButtonState() {//Check if the player is holding a key
         if(!Input.GetKey(KeyCode.UpArrow)&&this.myDirection == Direction.up) {
             onPress = false;
         }
@@ -51,7 +51,7 @@ public class Pacmen_movement : MonoBehaviour
         }
     }
 
-    private void changeDirection() {
+    private void changeDirection() {//If the player doesn't holding key and enter another key, the direction will be change
         if (Input.GetKey(KeyCode.UpArrow) && this.myDirection != Direction.up)
         {
             animatorController.SetTrigger("up_enter");

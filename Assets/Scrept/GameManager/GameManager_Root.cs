@@ -14,6 +14,7 @@ public class GameManager_Root : GameManager
         if (GameObject.Find("KeyCodeCarrier").GetComponent<KeyCodeCarrier>().KeyCode!=null) {
 
             GameStartTime = Time.time;
+            score = 0;
 
             GameObject.Find("KeyCode").GetComponent<Text>().text = GameObject.Find("KeyCodeCarrier").GetComponent<KeyCodeCarrier>().KeyCode;
             GameObject.Find("GameManager").GetComponent<RNgenerator>().setUp();
@@ -28,7 +29,7 @@ public class GameManager_Root : GameManager
 
     }
 
-   override protected void setUpMonsters()
+   override protected void setUpMonsters()//generate some random monsters
     {
         generatMonster(redMonster);
 
@@ -52,7 +53,7 @@ public class GameManager_Root : GameManager
         monster_new.GetComponent<monster_movement>().weekUpTime = GameObject.Find("GameManager").GetComponent<RNgenerator>().getRandom(1000, 8000) / 1000;
         monster_new.GetComponent<monster_movement>().nextWp = StartWP;
 
-        if (monster == greenMonster)
+        if (monster == greenMonster)//If the monster is green, give it a random patrol path
         {
             monster_new.GetComponent<monster_movement_green>().PatrolPath = getPatrolPath();
         }

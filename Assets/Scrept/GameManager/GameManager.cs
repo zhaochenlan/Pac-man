@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public int score = 0;
+    public static int score = 0;
     public static float gameTime = 0;
     public int pacman_life = 3;
     public int noOfDots = 120;
@@ -95,6 +95,7 @@ public class GameManager : MonoBehaviour
 
     virtual protected void setUpGame() {
         GameStartTime = Time.time;
+        score = 0;
         setUpMonsters();
         setupPacmanLife();
     }
@@ -163,7 +164,7 @@ public class GameManager : MonoBehaviour
         
     }
 
-    IEnumerator FindNewPacman()
+    IEnumerator FindNewPacman()//Find the new pac-man in the map, and attach it to GameManager
     {
         yield return new WaitForSeconds(0.1f);
         pacman = GameObject.FindWithTag("pacman");

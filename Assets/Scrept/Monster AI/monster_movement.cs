@@ -47,7 +47,7 @@ public class monster_movement : MonoBehaviour
 
     protected void Update()
     {
-        if (GameManager.gameTime > weekUpTime) {
+        if (GameManager.gameTime > weekUpTime) {//If the monster week up, move to next way point
             moveToNext();
         } else
         {

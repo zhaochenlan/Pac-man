@@ -13,11 +13,11 @@ public class RNgenerator : MonoBehaviour
     public void setUp() {
         if (GameObject.Find("KeyCodeCarrier").GetComponent<KeyCodeCarrier>().KeyCode != null)
         {
-            Fibonacci(GameObject.Find("KeyCodeCarrier").GetComponent<KeyCodeCarrier>().rootNumber);
+            Fibonacci(GameObject.Find("KeyCodeCarrier").GetComponent<KeyCodeCarrier>().rootNumber);//gat a start value of Fibonacci sequence based on the key code
         }
     }
 
-    public void Fibonacci(int n)
+    public void Fibonacci(int n)//Get the Nth value of the Fibonacci sequence
     {
         for (int i = 3; i <= n; i++)
         {
@@ -29,7 +29,7 @@ public class RNgenerator : MonoBehaviour
         }
     }
 
-    public int FibonacciGetNext()
+    public int FibonacciGetNext()//Get the next value of the Fibonacci sequence
     {
             fn = f1 + f2;
             if (fn > Threshold)
@@ -39,7 +39,7 @@ public class RNgenerator : MonoBehaviour
         return fn;
     }
 
-    public int getRandom(int a,int b)
+    public int getRandom(int a,int b)//Get a "random" value between a and b
     {
         if (a < b)
         {

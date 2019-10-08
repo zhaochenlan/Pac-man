@@ -25,12 +25,12 @@ public class MazeBuilder : MonoBehaviour
 
         transform.position = WPs[1].transform.position;
         lastWp = WPs[1];
-        buildPath(20);
+        buildPath(20);//random build a path in random direction, repeit 20 times to build maze
         transform.position = WPs[2].transform.position;
         lastWp = WPs[2];
         buildPath(15);
 
-        makeWalls();
+        makeWalls();//if there isn't a path, make walls full of the zone.
         Destroy(gameObject);
     }
 
@@ -76,22 +76,11 @@ public class MazeBuilder : MonoBehaviour
         }
     }
 
-    string MoveAndBuilde(Vector2 dir,int times) {
+    void MoveAndBuilde(Vector2 dir,int times) {
         for (int i = 0; i < times; i++) {
-
-            if (DetectFront(dir) == "wall") {
-                return "wall";
-            }
-
-            if (DetectFront(dir) == "Dot")
-            {
-                gameObject.transform.position = (Vector2)transform.position + dir;
-                return "Dot";
-
-            }
-            else//Create a Dot or power-up pill at the current location when there are no obstacles
-            {
-                if(GameObject.Find("GameManager").GetComponent<RNgenerator>().getRandom(100, 9000) / 100 == 1)
+            if (DetectFront(dir) != "wall" && DetectFront(dir) != "Dot") {    
+            //Create a Dot or power-up pill at the current location when there are no obstacles
+                if(GameObject.Find("GameManager").GetComponent<RNgenerator>().getRandom(100, 9000) / 100 == 1)//get a random number to dertenmin instantiate a dot or power-up pill
                 {
                     Instantiate(powerUpPill, transform.position, Quaternion.identity);
                 }
@@ -106,7 +95,7 @@ public class MazeBuilder : MonoBehaviour
             }
             
         }
-        return "null";
+        
     }
 
     string DetectFront(Vector2 dir)//Detect the object in front and return
@@ -131,7 +120,8 @@ public class MazeBuilder : MonoBehaviour
     }
 
     void makeWP() {//Create a way point at the current location
-        if (!LinkWp()) {
+        if (!LinkWp())
+        { //if the cur position hasn't a way point, creat a new one
             GameObject newWP = new GameObject("wayPoint (" + WPs.Count + ")");
             newWP.transform.position = transform.position;
             newWP.AddComponent<CircleCollider2D>();
@@ -150,13 +140,13 @@ public class MazeBuilder : MonoBehaviour
 
     }
 
-    bool LinkWp()
+    bool LinkWp()//link the cur waypoint to it's neighbor's waypoint, if the cur position already has a way point, then return false
     {
         float distance;
         for (int i = 0; i < WPs.Count; i++)
         {
             distance = Vector2.Distance(transform.position, WPs[i].transform.position);
-            if (distance < 0.5f&& WPs[i]!=lastWp)
+            if (distance < 0.5f && WPs[i]!=lastWp)
             {
                 if (!WPs[i].neighborWps.Contains(lastWp))
                 {
@@ -171,7 +161,7 @@ public class MazeBuilder : MonoBehaviour
     }
 
 
-    void makeWalls()
+    void makeWalls()//if there isn't a path, make walls full of the zone.
     {
         transform.position = startWall.transform.position;
 
@@ -181,7 +171,7 @@ public class MazeBuilder : MonoBehaviour
         }
     }
 
-    void makeOneLayer()
+    void makeOneLayer()//make one layer of the walls
     {
         float distance;
         bool overlapping = false;
